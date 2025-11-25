@@ -3,165 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luciano Puentes</title>
+    <title>Luciano Puentes - Plataforma Laboral SENCE</title>
 
     <style>
         body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0a0f1a, #0d1b2a 40%, #1b263b 80%);
-    background-attachment: fixed;
-    color: white;
-}
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a0f1a, #0d1b2a 40%, #1b263b 80%);
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
 
-.header-box {
-    width: 100%;
-    padding: 30px 20px;
-    text-align: center;
-    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.1)),
-                linear-gradient(45deg, rgba(0,150,255,0.4), rgba(0,0,80,0.5));
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
-}
+        /* --- TARJETA SUPERIOR AZUL GEOMÉTRICA --- */
+        .header-box {
+            width: 100%;
+            padding: 35px 20px;
+            background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.1)),
+                        linear-gradient(45deg, rgba(0,150,255,0.4), rgba(0,0,80,0.5));
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+            margin-bottom: 20px;
+        }
 
-.header-box h1 {
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #3aa6ff;
-    margin: 0;
-}
+        .header-box h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #3aa6ff;
+            margin: 0;
+        }
 
-.header-box h2 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #ffffff;
-    margin-top: 8px;
-}
+        .header-box h2 {
+            font-size: 15px;
+            margin-top: 8px;
+            color: #e5edf7;
+            font-weight: 300;
+        }
 
-.container {
-    width: 90%;
-    max-width: 350px;
-    margin: 20px auto;
-    background: rgba(255,255,255,0.08);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    backdrop-filter: blur(4px);
-}
-
-img.foto {
-    width: 100%;
-    border-radius: 50%;
-    border: 5px solid rgba(255,255,255,0.2);
-}
-
-.btn {
-    display: block;
-    background: #3a86ff;
-    color: white;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.btn:hover {
-    background: #1d5fcc;
-}
-
-.section-link {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.section-link a {
-    background: #1d5fcc;
-    padding: 12px 20px;
-    border-radius: 8px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+        /* CONTENEDOR CENTRAL */
         .container {
-            max-width: 380px;
-            margin: auto;
+            width: 90%;
+            max-width: 350px;
+            margin: 0 auto;
+            margin-top: 10px;
+            background: rgba(255,255,255,0.05);
             padding: 20px;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
         }
 
-        h1 {
-            font-size: 22px;
-            margin-bottom: 5px;
-        }
-
-        h2 {
-            font-size: 16px;
-            margin-top: 0;
-            color: #444;
-        }
-
+        /* FOTO PERFIL */
         img.foto {
-            width: 70%;
-            border-radius: 10%;
-            margin-top: 20px;
+            width: 100%;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.2);
         }
 
+        /* --- BOTONES NUEVO ESTILO GRIS ELEGANTE --- */
         .btn {
             display: block;
-            background: #3b82f6;
-            color: white;
-            padding: 14px;
+            background: #2b2f36;
+            color: #ffffff;
+            padding: 12px;
             margin: 10px 0;
             border-radius: 10px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 17px;
+            font-weight: 600;
+            border: 1px solid #40444b;
+            transition: 0.3s ease;
         }
 
         .btn:hover {
-            background: #1e60d4;
+            background: #3a3f47;
+            border-color: #4d525a;
         }
 
-        .section {
-            margin-top: 40px;
-            padding: 20px;
+        .section-link {
+            text-align: center;
+            margin-top: 35px;
         }
 
-        .link-web {
-            display: inline-block;
-            margin-top: 20px;
-            background: #2563eb;
-            color: #fff;
-            padding: 12px 18px;
-            text-decoration: none;
+        .section-link a {
+            background: #2e3340;
+            padding: 12px 20px;
             border-radius: 8px;
-            font-size: 18px;
+            display: inline-block;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            border: 1px solid #444a55;
+        }
+
+        .section-link a:hover {
+            background: #3a404d;
+            border-color: #555b66;
         }
     </style>
-</head>
 
+</head>
 <body>
 
+    <!-- TARJETA SUPERIOR -->
+    <div class="header-box">
+        <h1>LUCIANO PUENTES</h1>
+        <h2>Ejecutivo de Empresas Plataforma Laboral SENCE</h2>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
     <div class="container">
-        <h1>Luciano Puentes</h1>
-        <h2>Ejecutivo Empresas Plataforma Laboral SENCE</h2>
+        <img src="foto.png" class="foto" alt="Foto de perfil">
 
-        <img src="foto.png" class="foto" alt="Foto perfil">
+        <a class="btn" href="https://wa.me/56949934830" target="_blank">WhatsApp</a>
+        <a class="btn" href="mailto:lpuentes@sence.cl">Email</a>
+        <a class="btn" href="https://www.linkedin.com/in/lpuentes-sence" target="_blank">LinkedIn</a>
+    </div>
 
-        <h2>Contactemos</h2>
-
-        <a class="btn" href="https://wa.me/56949934830">WhatsApp</a>
-        <a class="btn" href="mailto:lpuentes@gmail.com">Email</a>
-        <a class="btn" href="https://www.linkedin.com/in/lpuentesmella/">LinkedIn</a>
-
-        <div class="section">
-            <h2>Conoce más de Plataforma Laboral SENCE</h2>
-            <a class="link-web" href="https://sence.gob.cl/personas/plataformas-laborales" target="_blank">
-                Ingresar al Sitio Web
-            </a>
-        </div>
+    <!-- ENLACE SENCE -->
+    <div class="section-link">
+        <h3>Conoce más sobre Plataforma Laboral</h3>
+        <a href="https://sence.gob.cl/personas/plataformas-laborales" target="_blank">
+            Ir al sitio web
+        </a>
     </div>
 
 </body>
